@@ -5,6 +5,7 @@
 *    white:       : #fff
 *    brown(medium): #774021
 *    brown(light) : #dfcbb5
+*    brown(dark)  : #653423
 *
 **************************************************/
 
@@ -32,9 +33,40 @@ body {
     height: 10vh;
 }
 
-.font-white{
+.navbar-nav > li > a {
+    padding-bottom: 24px;
+}
+
+.font-white {
+    position: relative;
+    text-align: center;
     color: #dfcbb5 !important;
-    padding-top: 4vh !important;
+    padding-top: 5vh !important;
+    width: 100px; /*控制寬度，避免文字寬度不同而造成版面搖晃*/
+}
+
+.font-white div {
+    position: relative;
+}
+
+.zh {
+    display: block;
+    font-size: 14px;
+}
+
+.en {
+    display: none;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.font-white:hover .zh {
+    display: none;
+}
+
+.font-white:hover .en {
+    display: block;
+    color: #fff;
 }
 
 .active {
@@ -44,7 +76,7 @@ body {
 /*-----------------------------------------------
 *    main
 -----------------------------------------------*/
-main .container {
+#main .container {
     height: 80vh;
 }
 
