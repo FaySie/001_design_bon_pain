@@ -1,0 +1,58 @@
+/**************************************************
+*
+*    web color
+*
+*    white:       : #fff
+*    brown(medium): #774021
+*    brown(light) : #dfcbb5
+*
+**************************************************/
+
+/*
+GENERAL
+*/
+body {
+    background: url(../img/bg.png) no-repeat;
+    background-size: cover;
+}
+
+/*-----------------------------------------------
+*    header
+-----------------------------------------------*/
+
+.logo {
+    display: block;
+    background: url(../img/logo-2.png) left bottom no-repeat;
+    width: 210px;
+    background-size: 55%;
+}
+
+.navbar {
+    background-color: transparent;
+    height: 10vh;
+}
+
+.font-white{
+    color: #dfcbb5 !important;
+    padding-top: 4vh !important;
+}
+
+.active {
+    background-color: rgba(119, 64,33, 0.5);
+}
+
+/*-----------------------------------------------
+*    main
+-----------------------------------------------*/
+main .container {
+    height: 80vh;
+}
+
+p {
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+/*-----------------------------------------------
+*    footer
+-----------------------------------------------*/
