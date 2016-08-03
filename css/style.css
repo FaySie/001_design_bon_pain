@@ -53,29 +53,36 @@ p {
     width: 100px; /*控制寬度，避免文字寬度不同而造成版面搖晃*/
 }
 
-.font-white div {
+.font-white {
     position: relative;
+}
+
+.font-white div {
+    position: absolute;
+    text-align: center;
 }
 
 .zh {
     display: block;
+    /*opacity: 1;*/
     font-size: 14px;
 }
 
 .en {
     display: none;
+    /*opacity: 0;*/
     text-transform: uppercase;
     font-size: 13px;
 }
 
-.font-white:hover .zh {
+/*.font-white:hover .zh {
     display: none;
 }
 
 .font-white:hover .en {
     display: block;
     color: #fff;
-}
+}*/
 
 .active {
     background-color: rgba(119, 64,33, 0.5);
@@ -106,3 +113,40 @@ p {
 #footer p {
     text-align: center;｀
 }
+
+/*-----------------------------------------------
+*    screen in 1600px
+-----------------------------------------------*/
+
+/*-----------------------------------------------
+*    screen under 1440px
+-----------------------------------------------*/
+
+@media screen and (max-width: 1440px) {
+    .navbar-brand {
+        height: 8vh;
+    }
+}
+
+/*-----------------------------------------------
+*    screen in 1024px
+-----------------------------------------------*/
+
+/*-----------------------------------------------
+*    screen between 768px and 1023px
+-----------------------------------------------*/
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .logo {
+        width: 150px;
+        background-size: 60%;
+    }
+
+    .navbar-brand {
+        height: 7vh;
+    }
+}
+
+/*-----------------------------------------------
+*    screen under 480px
+-----------------------------------------------*/
