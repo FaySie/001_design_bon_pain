@@ -9,10 +9,12 @@ $(document).ready(function(){
             $(this).children('.zh').stop().fadeIn();
         }
     );
+    $('.menu-hover').hover(
+        function(){
+            $('.megamenu').stop().fadeIn();
+        },
+        function(){
+            $('.megamenu').stop().fadeOut();
+        }
+    );
 });
-    // $('.font-white').mouseleave(function(){
-    //     $('.font-white').fadeToggle(function(){
-    //         $('.en').css('display','none');
-    //         $('.zh').css('display','block');
-    //     });
-    // });

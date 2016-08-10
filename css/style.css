@@ -64,28 +64,62 @@ p {
 
 .zh {
     display: block;
-    /*opacity: 1;*/
     font-size: 14px;
 }
 
 .en {
     display: none;
-    /*opacity: 0;*/
     text-transform: uppercase;
     font-size: 13px;
 }
 
-/*.font-white:hover .zh {
-    display: none;
-}
-
-.font-white:hover .en {
-    display: block;
-    color: #fff;
-}*/
-
 .active {
     background-color: rgba(119, 64,33, 0.5);
+}
+
+/*-----------------------------------------------
+*    megamenu
+-----------------------------------------------*/
+
+.megamenu {
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+    position: absolute;
+    width: 400px;
+}
+
+.megamenu1,
+.megamenu2 {
+    width: 200px;
+}
+
+.nav-header {
+    padding: 15px;
+}
+
+.nav-header p {
+    color: #653423;
+    padding-bottom: 5px;
+}
+
+.pic1,
+.pic2 {
+    width: 150px;
+    height: 150px;
+    margin: 0 15px;
+    padding: 15px;
+    background: url(../img/logo-1.jpg) no-repeat;
+    background-size: cover;
+}
+
+.menu1,
+.menu2 {
+    margin: 0 15px;
+}
+
+.menu1 li,
+.menu2 li {
+    padding: 5px 0;
 }
 
 /*-----------------------------------------------
